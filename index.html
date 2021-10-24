@@ -7,7 +7,11 @@
   <link rel="stylesheet" href="https://unpkg.com/element-ui@2.15.1/lib/theme-chalk/index.css">
   <link rel="stylesheet" href="src/css/style.css">
 </head>
-
+<style>
+  .el-button {
+    font-size: 20px;
+  }
+</style>
 <body>
   <div id="app">
     <header>
@@ -15,7 +19,7 @@
         <a href="https://pages-themes.github.io/architect/">
           <h1>Link Blog</h1>
         </a>
-        <h2>Architect is a theme for GitHub Pages.</h2>
+        <!--<h2>Architect is a theme for GitHub Pages.</h2>-->
         <!-- <a href="https://github.com/pages-themes/architect" class="button"><small>View project on</small> GitHub</a> -->
       </div>
     </header>
@@ -24,10 +28,21 @@
       <el-main >
         <div class="inner clearfix">
           <aside id="sidebar">
-            <el-row  align="top">
-              <el-button type="text" size="small">tab1</el-button>
-              <el-button type="text" size="small">tab2</el-button>
-              <el-button type="text" size="small">tab3</el-button>
+            <el-row>
+              <el-col :span="24">
+              <el-button :span="25" type="info">2021-10</el-button>
+              </el-col>
+                <el-button :span="20" style="margin-left: 10px" type="text">2021-10-24  </el-button>
+                <el-button :span="25" type="text">2021-10-23  </el-button>
+                <el-button :span="25" type="text">2021-10-22  </el-button>
+                <el-button  :span="25" type="text">2021-10-21 </el-button>
+                <el-button  :span="25" type="text">2021-10-20 </el-button>
+                <el-button  :span="25" type="text">2021-10-19 </el-button>
+                <el-button  :span="25" type="text">2021-10-18 </el-button>
+                <el-button  :span="25" type="text">2021-10-17 </el-button>
+                <el-button  :span="25" type="text">2021-10-16 </el-button>
+                <el-button  :span="25" type="text">2021-10-15 </el-button>
+
             </el-row>
 
 
@@ -48,16 +63,18 @@
 
 
           <section id="main-content">
-            <p>Text can be <strong>bold</strong>, <em>italic</em>, or <del>strikethrough</del>.</p>
+         <!--   <p>Text can be <strong>bold</strong>, <em>italic</em>, or <del>strikethrough</del>.</p>
             <p><a href="./another-page.html">Link to another page</a>.</p>
             <p>There should be whitespace between paragraphs.</p>
             <p>There should be whitespace between paragraphs. We recommend including a README, or a file with
               information
-              about your project.</p>
-            <h1 id="header-1">Header 1</h1>
-            <p>This is a normal paragraph following a header. GitHub is a code hosting platform for version control and
-              collaboration. It lets you and others work together on projects from anywhere.</p>
-            <h2 id="header-2">Header 2</h2>
+              about your project.</p>-->
+            <h2 id="header-1">2021年10月24日</h2>
+            <h1 id="header-2">1024节日快乐</h1>
+            <p>
+            <img src="./src/images/2021-10-24 095438.jpg" />
+            </p>
+          <!--  <h2 id="header-2">Header 2</h2>
             <blockquote>
               <p>This is a blockquote following a header.</p>
               <p>When something is important enough, you do it even if the odds are not in your favor.</p>
@@ -213,7 +230,7 @@
                 <pre class="highlight"><code>The final element.
         </code></pre>
               </div>
-            </div>
+            </div>-->
 
           </section>
 
